@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizGo - Inglés</title>
+  <meta name="description" content="Página de aprendizaje de Vocabulario en Inglés." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 style="text-align: center;">Prácticar Vocabulario en Inglés - Idioms</h1>
+      <p>• A continuación, se va a ir mostrando idioms de los que tendrás que conocer el resultado.</p>
+      <p>• Cada día, irá apareciendo una palabra nueva hasta completar la lista. ¿Serás capaz?</p>
+      <div class="card">
+        <h1 style="text-align: center;">¿Quieres empezar?</h1>
+        <p>• Pulsa en "Empezar" para iniciar el juego.</p>
+        <button class="btn main" onclick="start_quiz()">Empezar</button>
+      </div>
+      <div class="card" style="display:none;">
+        <h2 style="text-align: left;">The idiom is:</h2>
+        <h2 style="text-align: center;"><strong id="idiom"></strong></h2>
+        <div class="row">
+          <button id="first_reply" class="btn secondary" onclick="check_response(0)">Opción 1</button>
+          <button id="second_reply" class="btn secondary" onclick="check_response(1)">Opción 2</button>
+          <button id="third_reply" class="btn secondary" onclick="check_response(2)"> Opción 3</button>
+        </div>
+        <h4>Vas por la palabra <span id="idiom_number">1</span> de <span id="total_idioms_today">2</span></h4>
+      </div>
+      <div class="card" style="display:none;">
+        <h1 style="text-align: center;">Respuesta Correcta</h1>
+        <button class="btn main" onclick="next_question()">Siguiente Idiom</button>
+      </div>
+      <div class="card" style="display:none;">
+        <h1 style="text-align: center;">Respuesta Incorrecta</h1>
+        <button class="btn main" onclick="reload()">Volver a Empezar</button>
+      </div>
+      <div class="card" style="display:none;">
+        <h1 style="text-align: center;">Ya no tienes más por hoy!</h1>
+        <button class="btn main" onclick="reload()">Inicio</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner sencillo de cookies -->
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies funcionales">
+    <div class="content">
+      <p>Usamos una cookie funcional para recordar cuántas veces entras en esta página. No hacemos seguimiento ni analítica. ¿De acuerdo?</p>
+      <button id="acceptCookies" class="btn" type="button">Aceptar</button>
+      <button id="rejectCookies" class="btn secondary" type="button">Rechazar</button>
+    </div>
+  </div>
+
+  <script>
+
+   
+  </script>
+</body>
+</html>
