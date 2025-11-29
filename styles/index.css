@@ -14,7 +14,7 @@ position: fixed; left: 0; right: 0; bottom: 0;
 background: #111; color: #fff; padding: 1rem; display: none; z-index: 9999;
 }
 .cookie-banner .content { max-width: 960px; margin: 0 auto; display: flex; gap: 1rem; align-items: center; }
-.cookie-banner p { margin: 0; flex: 1; }
+.cookie-banner p { margin: 0; }
 code { background: rgba(0,0,0,.06); padding: .1rem .3rem; border-radius: 4px; }
 
 @media (max-width: 768px) {
