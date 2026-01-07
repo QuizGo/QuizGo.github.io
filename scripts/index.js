@@ -199,7 +199,7 @@ function set_words_in_quiz(first_access,fecha_hoy) {
             document.getElementById('third_reply').textContent = correct_button_index === 2 ? idiom_definition : other_definitions[2][1];
             // Poner el número de palabra y total.
             document.getElementById('idiom_number').textContent = intentos + 1;
-            document.getElementById('total_idioms_today').textContent = dias_transcurridos;
+            document.getElementById('total_idioms_today').textContent = dias_transcurridos + 1;
         } );
 }
 
