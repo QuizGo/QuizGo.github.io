@@ -20,6 +20,7 @@ function start_quiz() {
     } else if (!done_quiz) {
         alert("¡No has aceptado las cookies! No se guardan tus progresos.");
         console.info("Usuario no ha aceptado cookies.");
+        const banner = document.getElementById('cookieBanner');
         banner.style.display = 'block';
     } else if(done_quiz){
         alert("¡Ya has completado el quiz de hoy! Vuelve mañana.");
